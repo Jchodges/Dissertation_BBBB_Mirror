@@ -62,7 +62,65 @@ Placeholders…
 ## 4. CHAPTER SUMMARIES
 
 ### 4.1 Chapter 1 – Piciformes Brain
-*<< Insert chapter state summaries, results status, etc. >>*
+### Chapter 1 – Piciformes Brain: Session Summary (Project Hygiene + Results Draft)
+(From session: Project hygiene & canonical Methods/Results alignment)
+
+**Work done**
+- Cleaned project file architecture.
+- Established GPT mode strategy (Pro / Deep Research / Extended / Regular).
+- Canonicalized Methods: sampling, trait assembly, PGLS pipelines, model grids, diagnostics, GLS, influence checks, LOO CV, BM/OU/EB.
+- Drafted qualitative Results that reflect the Methods (no numbers yet).
+
+**Key decisions**
+- Treat absolute vs relative brain size as parallel but unequal analytical tiers.
+- Causal inference must be explicitly cautious; avoid mechanism claims without diagnostics + LOO support.
+- Tables are authoritative numeric containers; inline numbers allowed but secondary.
+
+**Open questions**
+- Strengthening causal framing in Results/Discussion.
+- Determining placement of numeric results (tables + inline).
+- Integrating BM/OU/EB results into the Discussion.
+
+**Next actions**
+- Export numeric model summaries from R.
+- Build tables for all major analyses.
+- Revise Results to emphasize associational framing and limits on causal inference.
+### Chapter 1 – Piciformes Brain: Session Summary (Data Sources + Finalized Methods)
+
+**Work done**
+- Locked down and documented brain data sources across Garcia-Peña, Iwaniuk datasets, Sayol, Corfield, Ksepka, Ferreira, Fedorova, Cardenas-Posada, Oyston, Fristoe, Hodges CT data.
+- Established Average_BrainVolume_mL derivation pipeline.
+- Canonicalized Mass_canonical (AVONET BodyMass-Value).
+- Canonicalized wing trait sources (AVONET + HWA).
+- Canonicalized Diet_5Cat, dropping only n=1 categories.
+- Finalized MCC Jetz/BirdTree phylogeny usage.
+
+**Methods section fully drafted with these subsections**
+- Study system & sampling  
+- Trait data assembly  
+- Phylogenetic data processing  
+- Trait preprocessing (PGLS mass correction)  
+- Absolute & relative PGLS models  
+- Systematic model grids  
+- Diagnostics  
+- Heteroscedastic GLS  
+- Influence analysis  
+- LOO PGLS  
+- BM/OU/EB process models  
+- Reproducibility & data pipeline
+
+**Open tasks**
+- Create metadata file linking trait columns → data sources → citation.
+- Finalize bibliographic references.
+- Double-check BM/OU/EB code paths.
+- Decide metadata file placement in dissertation/mss.
+
+**Defaults established**
+- Mass = AVONET BodyMass-Value.
+- Diet = EltonTraits → Diet_5Cat (drop only n=1).
+- Brain_rel_PGLS = PGLS residuals.
+- MCC Jetz/BirdTree Hackett phylogeny = sole tree unless overridden.
+
 
 ### 4.2 Chapter 2 – TBD
 (placeholder)
@@ -85,3 +143,26 @@ These must always match the mirror’s `/tasks/` folder.
 - See: `/tasks/this_week.md`
 - See: `/tasks/log_2025.md`
 
+## 8. Teaching Project – BIOL 4161 TA Standardization & Cardiac Treatment Database
+
+### Session Summary
+**Work done**
+- Ingested Physio.zip, parsed course structure.
+- Identified core buckets: course docs, system-specific rubrics, cardiac final project materials, neural readings, graded examples.
+- Ingested six neuro-relevant PDFs.
+- Built canonical neurophysiology framework (membrane potential, APs, synapses, reflexes, ANS).
+- Identified core vocabulary for TA consistency.
+
+**Key decisions**
+- TA docs will use standardized neural physiology language from course PDFs + your uploads.
+- The cardiac treatment database will be part of the unified project, not separate.
+
+**Open questions**
+- First deliverable: glossary vs lab-specific neural guide?
+- Cross-system template structure for TA docs.
+- Database schema for cardiac treatments.
+
+**Next actions**
+1. Choose glossary-first vs neural-lab-guide-first.
+2. Draft cross-system TA document template.
+3. Outline cardiac treatment database schema.
